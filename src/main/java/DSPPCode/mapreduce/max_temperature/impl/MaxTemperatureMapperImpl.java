@@ -13,6 +13,7 @@ public class MaxTemperatureMapperImpl extends MaxTemperatureMapper {
     private static final IntWritable ONE = new IntWritable(1);
 
     private final Text word = new Text();
+    private final Text word2 = new Text();
 
     private final Pattern pattern = Pattern.compile("\\W+");
 
@@ -23,7 +24,16 @@ public class MaxTemperatureMapperImpl extends MaxTemperatureMapper {
             String str = itr.nextToken();
             str = pattern.matcher(str).replaceAll("");
             word.set(str);
-            context.write(word, ONE);
+            str = itr.nextToken();
+            str = pattern.matcher(str).replaceAll("");
+            int n = 0;
+            try {
+                n = Integer.parseInt(str);
+            } catch (NumberFormatException e) {
+                e.printStackTrace();
+            }
+            IntWritable tmp = new IntWritable(n);
+            context.write(word, tmp);
         }
     }
 

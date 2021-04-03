@@ -11,8 +11,7 @@ public class MaxTemperatureReducerImpl extends MaxTemperatureReducer {
     private IntWritable result = new IntWritable();
 
     @Override
-    public void reduce(Text key, Iterable<IntWritable> values, Context context)
-            throws IOException, InterruptedException {
+    public void reduce(Text key, Iterable<IntWritable> values, Context context) throws IOException, InterruptedException {
         int max = 0;
         for (IntWritable val : values) {
             max = max > val.get() ? max : val.get();
