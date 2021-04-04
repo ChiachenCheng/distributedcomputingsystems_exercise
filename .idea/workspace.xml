@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="739f08f8-e2f8-42b8-b2bf-9b013cd47561" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1qev5ayGonwN0NHUpDZIJsEU6Rb" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunManager" selected="JUnit.AverageScoreTest">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AverageScoreTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="distributedcomputingsystems_exercise" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DSPPTest.student.mapreduce.average_score.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="DSPPTest.student.mapreduce.average_score" />
+      <option name="MAIN_CLASS_NAME" value="DSPPTest.student.mapreduce.average_score.AverageScoreTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AverageScoreTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="distributedcomputingsystems_exercise" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DSPPTest.student.mapreduce.average_score.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="DSPPTest.student.mapreduce.average_score" />
+      <option name="MAIN_CLASS_NAME" value="DSPPTest.student.mapreduce.average_score.AverageScoreTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MaxTemperatureTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="distributedcomputingsystems_exercise" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DSPPTest.student.mapreduce.max_temperature.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="DSPPTest.student.mapreduce.max_temperature" />
+      <option name="MAIN_CLASS_NAME" value="DSPPTest.student.mapreduce.max_temperature.MaxTemperatureTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AverageScoreTest" />
+        <item itemvalue="JUnit.AverageScoreTest.test" />
+        <item itemvalue="JUnit.MaxTemperatureTest.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="739f08f8-e2f8-42b8-b2bf-9b013cd47561" name="Default Changelist" comment="" />
+      <created>1617452690317</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617452690317</updated>
+      <workItem from="1617452694794" duration="6000" />
+      <workItem from="1617452705400" duration="284000" />
+      <workItem from="1617452995742" duration="511000" />
+      <workItem from="1617458468032" duration="59000" />
+      <workItem from="1617458532755" duration="98000" />
+      <workItem from="1617458653721" duration="107000" />
+      <workItem from="1617458765611" duration="481000" />
+      <workItem from="1617459297888" duration="1054000" />
+      <workItem from="1617460827459" duration="6065000" />
+      <workItem from="1617518006674" duration="2254000" />
+      <workItem from="1617520363519" duration="68000" />
+      <workItem from="1617520477965" duration="207000" />
+      <workItem from="1617520740512" duration="274000" />
+      <workItem from="1617521109530" duration="397000" />
+      <workItem from="1617521534168" duration="1839000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="354" y="132" key="#Inspections" timestamp="1617458961438">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="354" y="132" key="#Inspections/0.0.1440.900@0.0.1440.900" timestamp="1617458961438" />
+    <state width="1398" height="280" key="GridCell.Tab.0.bottom" timestamp="1617524242812">
+      <screen x="0" y="25" width="1440" height="814" />
+    </state>
+    <state width="1398" height="280" key="GridCell.Tab.0.bottom/0.25.1440.814@0.25.1440.814" timestamp="1617524242812" />
+    <state width="1398" height="208" key="GridCell.Tab.0.bottom/0.25.1440.815@0.25.1440.815" timestamp="1617459940632" />
+    <state width="1398" height="292" key="GridCell.Tab.0.bottom/0.25.1440.817@0.25.1440.817" timestamp="1617463862049" />
+    <state width="1398" height="280" key="GridCell.Tab.0.center" timestamp="1617524242812">
+      <screen x="0" y="25" width="1440" height="814" />
+    </state>
+    <state width="1398" height="280" key="GridCell.Tab.0.center/0.25.1440.814@0.25.1440.814" timestamp="1617524242812" />
+    <state width="1398" height="208" key="GridCell.Tab.0.center/0.25.1440.815@0.25.1440.815" timestamp="1617459940632" />
+    <state width="1398" height="292" key="GridCell.Tab.0.center/0.25.1440.817@0.25.1440.817" timestamp="1617463862048" />
+    <state width="1398" height="280" key="GridCell.Tab.0.left" timestamp="1617524242811">
+      <screen x="0" y="25" width="1440" height="814" />
+    </state>
+    <state width="1398" height="280" key="GridCell.Tab.0.left/0.25.1440.814@0.25.1440.814" timestamp="1617524242811" />
+    <state width="1398" height="208" key="GridCell.Tab.0.left/0.25.1440.815@0.25.1440.815" timestamp="1617459940631" />
+    <state width="1398" height="292" key="GridCell.Tab.0.left/0.25.1440.817@0.25.1440.817" timestamp="1617463862048" />
+    <state width="1398" height="280" key="GridCell.Tab.0.right" timestamp="1617524242812">
+      <screen x="0" y="25" width="1440" height="814" />
+    </state>
+    <state width="1398" height="280" key="GridCell.Tab.0.right/0.25.1440.814@0.25.1440.814" timestamp="1617524242812" />
+    <state width="1398" height="208" key="GridCell.Tab.0.right/0.25.1440.815@0.25.1440.815" timestamp="1617459940632" />
+    <state width="1398" height="292" key="GridCell.Tab.0.right/0.25.1440.817@0.25.1440.817" timestamp="1617463862049" />
+    <state width="1398" height="260" key="GridCell.Tab.1.bottom" timestamp="1617524208385">
+      <screen x="0" y="25" width="1440" height="814" />
+    </state>
+    <state width="1398" height="260" key="GridCell.Tab.1.bottom/0.25.1440.814@0.25.1440.814" timestamp="1617524208385" />
+    <state width="1398" height="260" key="GridCell.Tab.1.center" timestamp="1617524208385">
+      <screen x="0" y="25" width="1440" height="814" />
+    </state>
+    <state width="1398" height="260" key="GridCell.Tab.1.center/0.25.1440.814@0.25.1440.814" timestamp="1617524208385" />
+    <state width="1398" height="260" key="GridCell.Tab.1.left" timestamp="1617524208384">
+      <screen x="0" y="25" width="1440" height="814" />
+    </state>
+    <state width="1398" height="260" key="GridCell.Tab.1.left/0.25.1440.814@0.25.1440.814" timestamp="1617524208384" />
+    <state width="1398" height="260" key="GridCell.Tab.1.right" timestamp="1617524208385">
+      <screen x="0" y="25" width="1440" height="814" />
+    </state>
+    <state width="1398" height="260" key="GridCell.Tab.1.right/0.25.1440.814@0.25.1440.814" timestamp="1617524208385" />
+    <state x="258" y="109" key="Maven.ArtifactSearchDialog" timestamp="1617459505843">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="258" y="109" key="Maven.ArtifactSearchDialog/0.0.1440.900@0.0.1440.900" timestamp="1617459505843" />
+    <state x="385" y="25" key="SettingsEditor" timestamp="1617524352658">
+      <screen x="0" y="25" width="1440" height="814" />
+    </state>
+    <state x="208" y="28" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1617459076087" />
+    <state x="385" y="25" key="SettingsEditor/0.25.1440.814@0.25.1440.814" timestamp="1617524352658" />
+    <state x="385" y="210" key="run.anything.popup" timestamp="1617459060451">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="210" key="run.anything.popup/0.0.1440.900@0.0.1440.900" timestamp="1617459060451" />
+  </component>
+</project>
