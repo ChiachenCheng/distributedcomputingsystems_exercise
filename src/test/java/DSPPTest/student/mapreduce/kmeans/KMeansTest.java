@@ -15,7 +15,7 @@ public class KMeansTest extends TestTemplate {
   public void test() throws Exception {
     // 设置路径
     String inputPath1 = root + "/mapreduce/kmeans/data";
-    String inputPath2 = "src/test/resources/student/mapreduce/kmeans/center/";
+    String inputPath2 = root + "/mapreduce/kmeans/center/";
     String outputPath = outputRoot + "/mapreduce/kmeans/";
     String outputFile = outputPath + "3/part-m-00000";
     String answerFile = root + "/mapreduce/kmeans/answer";

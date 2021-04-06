@@ -48,10 +48,10 @@ public class KMeansRunner extends Configured implements Tool {
     // 将聚类中心集通过分布式缓存广播出去
     if (iteration == 0) {
       // 第一次迭代时的聚类中心集
-      job.addCacheFile(new URI(args[2]));
+      job.addCacheFile(new Path(args[2]).toUri());
     } else {
       // 广播上一次迭代输出的聚类中心集
-      job.addCacheFile(new URI(args[1] + (iteration - 1)));
+      job.addCacheFile(new Path(args[1] + (iteration - 1)).toUri());
     }
 
     // 最后一次迭代输出的是聚类结果，不需要再计算新的聚类中心
