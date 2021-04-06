@@ -15,7 +15,7 @@ public class PageRankTest extends TestTemplate {
   public void test() throws Exception {
     // 设置路径
     String inputPath1 = root + "/mapreduce/pagerank/pages";
-    String inputPath2 = "src/test/resources/student/mapreduce/pagerank/ranks";
+    String inputPath2 = root + "/mapreduce/pagerank/ranks";
     String outputPath = outputRoot + "/mapreduce/pagerank/";
     String outputFile = outputPath + "19/part-r-00000";
     String answerFile = root + "/mapreduce/pagerank/answer";

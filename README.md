@@ -1,7 +1,7 @@
 # PageRank
 ## 待完成
-- 请在DSPPCode.mapreduce.pagerank.answer中创建PageRankMapperImpl，继承PageRankMapper，实现抽象方法
-- 请在DSPPCode.mapreduce.pagerank.answer中创建PageRankReducerImpl，继承PageRankReducer，实现抽象方法
+- 请在DSPPCode.mapreduce.pagerank.impl中创建PageRankMapperImpl，继承PageRankMapper，实现抽象方法
+- 请在DSPPCode.mapreduce.pagerank.impl中创建PageRankReducerImpl，继承PageRankReducer，实现抽象方法
 
 ## 题目描述：
 

@@ -39,7 +39,7 @@ public class PageRankRunner extends Configured implements Tool {
     // 设置数据的输入路径
     if (iteration == 0) {
       FileInputFormat.addInputPath(job, new Path(args[0]));
-      job.addCacheFile(new URI(args[3]));
+      job.addCacheFile(new Path(args[3]).toUri());
     } else {
       // 将上一次迭代的输出设置为输入
       FileInputFormat.addInputPath(job, new Path(args[1] + (iteration - 1)));
