@@ -35,7 +35,8 @@ public class PageRankReducerImpl extends PageRankReducer {
         // 根据公式计算排名值
         double pageRank = (1 - D) / totalPage + D * sum;
         // 更新网页信息中的排名值
-        pageInfo[1] = String.valueOf(pageRank);
+        if (PageRankRunner.iteration != 0)
+            pageInfo[pageInfo.length - 1] = String.valueOf(pageRank);
         // 最后一次迭代输出网页名及排名值，而其余迭代输出网页信息
         StringBuilder result = new StringBuilder();
         if (iteration == (PageRankRunner.MAX_ITERATION - 1)) {
@@ -44,6 +45,8 @@ public class PageRankReducerImpl extends PageRankReducer {
             for (String data : pageInfo) {
                 result.append(data).append(" ");
             }
+            if (PageRankRunner.iteration == 0)
+                result.append(String.valueOf(pageRank));
         }
 //        StringBuilder result = new StringBuilder();
 //        result.append(pageInfo[0]).append(" ").append(String.format("%.5f", pageRank));
