@@ -1,11 +1,55 @@
 package DSPPCode.flink.digital_conversion.impl;
 
 import DSPPCode.flink.digital_conversion.question.DigitalConversion;
+import DSPPCode.flink.digital_conversion.question.DigitalWord;
+import org.apache.flink.api.common.functions.MapFunction;
+import org.apache.flink.api.java.tuple.Tuple1;
+import org.apache.flink.streaming.api.datastream.DataStream;
 
 public class DigitalConversionImpl extends DigitalConversion{
 
   public DataStream<String> digitalConversion(DataStream<Tuple1<String>> digitals){
-
+    DataStream<String> ans = digitals.map(
+        new MapFunction<Tuple1<String>, String>() {
+          @Override
+          public String map(Tuple1<String> tuple1) throws Exception {
+            char c = tuple1.f0.charAt(0);
+            switch(c){
+              case '0':
+                return DigitalWord.ZERO.getWord();
+                // break;
+              case '1':
+                return DigitalWord.ONE.getWord();
+              // break;
+              case '2':
+                return DigitalWord.TWO.getWord();
+              // break;
+              case '3':
+                return DigitalWord.THREE.getWord();
+              // break;
+              case '4':
+                return DigitalWord.FOUR.getWord();
+              // break;
+              case '5':
+                return DigitalWord.FIVE.getWord();
+              // break;
+              case '6':
+                return DigitalWord.SIX.getWord();
+              // break;
+              case '7':
+                return DigitalWord.SEVEN.getWord();
+              // break;
+              case '8':
+                return DigitalWord.EIGHT.getWord();
+              // break;
+              case '9':
+                return DigitalWord.NINE.getWord();
+              // break;
+            }
+            return tuple1.f0;
+          }
+        });
+    return ans;
   }
 
 }
