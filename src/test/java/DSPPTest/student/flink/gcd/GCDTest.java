@@ -6,9 +6,9 @@ import static DSPPTest.util.Verifier.verifyKV;
 import static DSPPTest.util.Verifier.verifyList;
 
 import DSPPCode.flink.gcd.impl.GCDImpl;
-import DSPPCode.flink.stream_warm_up.impl.WordCountImpl;
+// import DSPPCode.flink.stream_warm_up.impl.WordCountImpl;
 import DSPPTest.student.TestTemplate;
-import DSPPTest.student.flink.stream_warm_up.Source;
+// import DSPPTest.student.flink.stream_warm_up.Source;
 import org.junit.Test;
 
 public class GCDTest extends TestTemplate {
