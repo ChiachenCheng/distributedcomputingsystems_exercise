@@ -37,17 +37,6 @@ public class GradePointImpl extends GradePoint{
           }
         }
     );
-    DataStream<Tuple3<String, Integer, Float>> temp = calans.keyBy(0)
-        .window(TumblingEventTimeWindows.of(Time.seconds(5))).reduce(
-            new ReduceFunction<Tuple3<String, Integer, Float>>() {
-              @Override
-              public Tuple3<String, Integer, Float> reduce(
-                  Tuple3<String, Integer, Float> stringIntegerFloatTuple3,
-                  Tuple3<String, Integer, Float> t1) throws Exception {
-                return null;
-              }
-            }
-        );
     DataStream<Tuple3<String, Integer, Float>> ans = calans.filter(
         new FilterFunction<Tuple3<String, Integer, Float>>() {
           @Override
@@ -67,7 +56,7 @@ public class GradePointImpl extends GradePoint{
           }
         }
     );
-    temp.print();
+    ans.print();
     return ans;
   }
 
