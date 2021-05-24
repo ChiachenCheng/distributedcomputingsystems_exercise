@@ -45,8 +45,9 @@ public class DigitalConversionImpl extends DigitalConversion{
               case '9':
                 return DigitalWord.NINE.getWord();
               // break;
+              default:
+                return "";
             }
-            return tuple1.f0;
           }
         });
     return ans;
