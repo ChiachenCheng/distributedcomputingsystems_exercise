@@ -33,7 +33,7 @@ public class DigitalConversionImpl extends DigitalConversion{
               case 5.0:
                 return DigitalWord.FIVE.getWord();
               // break;
-              case '6':
+              case 6.0:
                 return DigitalWord.SIX.getWord();
               // break;
               case '7':
