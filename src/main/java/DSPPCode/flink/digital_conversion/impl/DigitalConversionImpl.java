@@ -13,15 +13,15 @@ public class DigitalConversionImpl extends DigitalConversion{
         new MapFunction<Tuple1<String>, String>() {
           @Override
           public String map(Tuple1<String> tuple1) throws Exception {
-            char c = tuple1.f0.charAt(0);
-            switch(c){
-              case '0':
+            double d = Double.parseDouble(tuple1.f0);
+            switch(d){
+              case 0.0:
                 return DigitalWord.ZERO.getWord();
                 // break;
-              case '1':
+              case 1.0:
                 return DigitalWord.ONE.getWord();
               // break;
-              case '2':
+              case 2.0:
                 return DigitalWord.TWO.getWord();
               // break;
               case '3':
