@@ -24,7 +24,7 @@ public class DigitalConversionImpl extends DigitalConversion{
               case 2.0:
                 return DigitalWord.TWO.getWord();
               // break;
-              case '3':
+              case 3.0:
                 return DigitalWord.THREE.getWord();
               // break;
               case '4':
