@@ -19,34 +19,34 @@ public class DigitalConversionImpl extends DigitalConversion{
               return "";
             }
             switch(i){
-              case 0.0:
+              case 0:
                 return DigitalWord.ZERO.getWord();
                 // break;
-              case 1.0:
+              case 1:
                 return DigitalWord.ONE.getWord();
               // break;
-              case 2.0:
+              case 2:
                 return DigitalWord.TWO.getWord();
               // break;
-              case 3.0:
+              case 3:
                 return DigitalWord.THREE.getWord();
               // break;
-              case 4.0:
+              case 4:
                 return DigitalWord.FOUR.getWord();
               // break;
-              case 5.0:
+              case 5:
                 return DigitalWord.FIVE.getWord();
               // break;
-              case 6.0:
+              case 6:
                 return DigitalWord.SIX.getWord();
               // break;
-              case 7.0:
+              case 7:
                 return DigitalWord.SEVEN.getWord();
               // break;
-              case 8.0:
+              case 8:
                 return DigitalWord.EIGHT.getWord();
               // break;
-              case 9.0:
+              case 9:
                 return DigitalWord.NINE.getWord();
               // break;
               default:
