@@ -3,7 +3,7 @@ package DSPPCode.flink.digital_conversion.question;
 import org.apache.flink.api.common.functions.Partitioner;
 
 
-public abstract class DigitalPartitioner<T> implements Partitioner<T> {
+public abstract class DigitalPartitioner implements Partitioner<String> {
 
   /**
    * Computes the partition for the given key.
@@ -13,5 +13,5 @@ public abstract class DigitalPartitioner<T> implements Partitioner<T> {
    * @return The partition index.
    */
   @Override
-  public abstract int partition(T key, int numPartitions);
+  public abstract int partition(String key, int numPartitions);
 }
