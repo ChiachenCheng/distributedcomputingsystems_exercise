@@ -42,7 +42,7 @@ public class DigitalConversionImpl extends DigitalConversion{
               case 8.0:
                 return DigitalWord.EIGHT.getWord();
               // break;
-              case '9':
+              case 9.0:
                 return DigitalWord.NINE.getWord();
               // break;
               default:
