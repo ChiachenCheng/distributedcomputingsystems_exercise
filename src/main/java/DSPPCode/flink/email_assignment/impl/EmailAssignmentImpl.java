@@ -19,24 +19,41 @@ public class EmailAssignmentImpl extends EmailAssignment{
             String TRUE = "SUCCESS";
             String FALSE = "FAILURE";
             String regex = "^[a-z0-9A-Z_]+$";
-            if (!request.getAlias().matches(regex))
+            if (!request.getAlias().matches(regex)) {
+              // System.out.println("no bother");
               return FALSE;
-            System.out.println(hash);
-            String k = request.getDepart().toString() + request.getAlias();
+            }
+            Integer fi = new Integer(request.getDepart().getFirstLevelCode());
+            Integer se = new Integer(request.getDepart().getSecondLevelCode());
+            String k = fi.toString() + se.toString() + request.getAlias();
             Integer rid = hash.getOrDefault(k, -1);
             if (rid == -1 && request.getType() == RequestType.APPLY){
               hash.put(k, request.getId());
+              System.err.println(hash);
               return TRUE;
             }
             else if (rid == request.getId() && request.getType() == RequestType.REVOKE){
               hash.put(k, -1);
+              System.out.println(hash);
               return TRUE;
             }
-            else return FALSE;
+            else {
+              // System.out.println(rid);
+              // System.out.println(request.getId());
+              return FALSE;
+            }
           }
         }
     );
-    ans.print();
+    DataStream<String> test = ans.map(
+        new MapFunction<String, String>() {
+          @Override
+          public String map(String s) throws Exception {
+            System.err.println(s);
+            return s;
+          }
+        }
+    );
     return ans;
   }
 }

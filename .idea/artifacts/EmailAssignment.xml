@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="EmailAssignment">
+    <output-path>$PROJECT_DIR$/out/artifacts/EmailAssignment</output-path>
+    <root id="archive" name="EmailAssignment.jar">
+      <element id="module-output" name="distributedcomputingsystems_exercise" />
+      <element id="module-source" name="distributedcomputingsystems_exercise" />
+    </root>
+  </artifact>
+</component>
