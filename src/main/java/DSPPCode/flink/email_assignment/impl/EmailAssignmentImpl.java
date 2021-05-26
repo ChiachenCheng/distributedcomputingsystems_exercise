@@ -19,6 +19,11 @@ public class EmailAssignmentImpl extends EmailAssignment{
             String TRUE = "SUCCESS";
             String FALSE = "FAILURE";
             String regex = "^[a-z0-9A-Z_]+$";
+            if (request.getAlias().length() < 5 || request.getAlias().length() > 11) {
+              System.err.print("no bother ");
+              System.err.println(hash);
+              return FALSE;
+            }
             if (!request.getAlias().matches(regex)) {
               System.err.print("no bother ");
               System.err.println(hash);
