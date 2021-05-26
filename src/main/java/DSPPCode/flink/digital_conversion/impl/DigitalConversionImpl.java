@@ -14,7 +14,11 @@ public class DigitalConversionImpl extends DigitalConversion{
           @Override
           public String map(Tuple1<String> tuple1) throws Exception {
             double d = Double.parseDouble(tuple1.f0);
-            switch(d){
+            int i = (int)d;
+            if (Math.abs(d - i) > 0.00001){
+              return "";
+            }
+            switch(i){
               case 0.0:
                 return DigitalWord.ZERO.getWord();
                 // break;
