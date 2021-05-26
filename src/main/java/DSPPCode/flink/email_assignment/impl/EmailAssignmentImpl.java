@@ -20,7 +20,8 @@ public class EmailAssignmentImpl extends EmailAssignment{
             String FALSE = "FAILURE";
             String regex = "^[a-z0-9A-Z_]+$";
             if (!request.getAlias().matches(regex)) {
-              // System.out.println("no bother");
+              System.err.print("no bother ");
+              System.err.println(hash);
               return FALSE;
             }
             Integer fi = new Integer(request.getDepart().getFirstLevelCode());
@@ -29,17 +30,19 @@ public class EmailAssignmentImpl extends EmailAssignment{
             Integer rid = hash.getOrDefault(k, -1);
             if (rid == -1 && request.getType() == RequestType.APPLY){
               hash.put(k, request.getId());
+              System.err.print("go1 ");
               System.err.println(hash);
               return TRUE;
             }
             else if (rid == request.getId() && request.getType() == RequestType.REVOKE){
               hash.put(k, -1);
-              System.out.println(hash);
+              System.err.print("go2 ");
+              System.err.println(hash);
               return TRUE;
             }
             else {
-              // System.out.println(rid);
-              // System.out.println(request.getId());
+              System.err.print("go3 ");
+              System.err.println(hash);
               return FALSE;
             }
           }
@@ -54,6 +57,7 @@ public class EmailAssignmentImpl extends EmailAssignment{
           }
         }
     );
+    System.err.println("---------");
     return ans;
   }
 }
