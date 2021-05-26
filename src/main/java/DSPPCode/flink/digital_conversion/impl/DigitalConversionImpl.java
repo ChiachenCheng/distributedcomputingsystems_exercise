@@ -2,6 +2,7 @@ package DSPPCode.flink.digital_conversion.impl;
 
 import DSPPCode.flink.digital_conversion.question.DigitalConversion;
 import DSPPCode.flink.digital_conversion.question.DigitalWord;
+import org.apache.flink.api.common.functions.FilterFunction;
 import org.apache.flink.api.common.functions.MapFunction;
 import org.apache.flink.api.java.tuple.Tuple1;
 import org.apache.flink.streaming.api.datastream.DataStream;
@@ -53,7 +54,15 @@ public class DigitalConversionImpl extends DigitalConversion{
                 return "";
             }
           }
-        });
+        }).filter(
+        new FilterFunction<String>() {
+          @Override
+          public boolean filter(String s) throws Exception {
+            if(s != "") return true;
+            return false;
+          }
+        }
+    );
     return ans;
   }
 

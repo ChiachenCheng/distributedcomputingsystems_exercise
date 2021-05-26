@@ -26,6 +26,8 @@ public abstract class DigitalConversion {
 
     DataStream<String> result = digitalConversion(partData);
 
+    result.print();
+
     // 将结果保存到文件中
     result.writeAsText(args[1]);
     env.execute(getClass().getName());
