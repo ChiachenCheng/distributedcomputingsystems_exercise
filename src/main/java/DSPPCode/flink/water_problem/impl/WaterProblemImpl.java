@@ -31,18 +31,24 @@ public class WaterProblemImpl extends WaterProblem {
     );
     DataStream<Tuple4<Boolean, Long, Long, Long>> cal = input.keyBy(1).flatMap(
         new FlatMapFunction<Tuple4<Boolean, Long, Long, Long>, Tuple4<Boolean, Long, Long, Long>>() {
-          long line = 0, speed = 0, lasttime = 0;
+          long[] line = new long[]{0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+          long[] speed = new long[]{0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+          long[] lasttime = new long[]{0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
           @Override
           public void flatMap(
               Tuple4<Boolean, Long, Long, Long> tuple4,
               Collector<Tuple4<Boolean, Long, Long, Long>> collector) throws Exception {
+            int p = tuple4.f1.intValue();
             if(tuple4.f0){
               Tuple4<Boolean, Long, Long, Long> col = new Tuple4<Boolean, Long, Long, Long>(true,
-                  tuple4.f1, tuple4.f2, line + (tuple4.f2 - lasttime) * speed);
+                  tuple4.f1, tuple4.f2, line[p] + (tuple4.f2 - lasttime[p]) * speed[p]);
               collector.collect(col);
             } else {
-              line += (tuple4.f2 - lasttime) * speed;
-              speed = tuple4.f3;
+              line[p] += (tuple4.f2 - lasttime[p]) * speed[p];
+              if (line[p] < 0)
+                line[p] = 0;
+              speed[p] = tuple4.f3;
+              lasttime[p] = tuple4.f2;
             }
           }
         }
