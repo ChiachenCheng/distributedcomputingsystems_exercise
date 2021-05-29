@@ -18,7 +18,7 @@ public class WaterProblemImpl extends WaterProblem {
         new MapFunction<String, Tuple4<Boolean, Long, Long, Long>>() {
           @Override
           public Tuple4<Boolean, Long, Long, Long> map(String s) throws Exception {
-            System.err.println(s);
+            // System.err.println(s);
             String[] ns = s.split(",");
             Boolean b = false;
             if (ns[0].equals("true"))
@@ -41,7 +41,8 @@ public class WaterProblemImpl extends WaterProblem {
             int p = tuple4.f1.intValue();
             if(tuple4.f0){
               Tuple4<Boolean, Long, Long, Long> col = new Tuple4<Boolean, Long, Long, Long>(true,
-                  tuple4.f1, tuple4.f2, line[p] + (tuple4.f2 - lasttime[p]) * speed[p]);
+                  tuple4.f1, tuple4.f2,
+                  (line[p] + (tuple4.f2 - lasttime[p]) * speed[p]) >= 0 ? (line[p] + (tuple4.f2 - lasttime[p]) * speed[p]) : 0);
               collector.collect(col);
             } else {
               line[p] += (tuple4.f2 - lasttime[p]) * speed[p];
@@ -50,6 +51,13 @@ public class WaterProblemImpl extends WaterProblem {
               speed[p] = tuple4.f3;
               lasttime[p] = tuple4.f2;
             }
+            System.err.print(p);
+            System.err.print(' ');
+            System.err.print(line[p]);
+            System.err.print(' ');
+            System.err.print(speed[p]);
+            System.err.print(' ');
+            System.err.println(lasttime[p]);
           }
         }
     );
@@ -62,18 +70,6 @@ public class WaterProblemImpl extends WaterProblem {
           }
         }
     );
-    // SingleOutputStreamOperator<Tuple4<Boolean, Integer, Integer, Integer>> ans;
-    // ans = input.keyBy(1).reduce(
-    //     new ReduceFunction<Tuple4<Boolean, Integer, Integer, Integer>>() {
-    //       @Override
-    //       public Tuple4<Boolean, Integer, Integer, Integer> reduce(
-    //           Tuple4<Boolean, Integer, Integer, Integer> booleanIntegerIntegerIntegerTuple4,
-    //           Tuple4<Boolean, Integer, Integer, Integer> t1) throws Exception {
-    //         if
-    //         return null;
-    //       }
-    //     }
-    // );
     System.err.println("--------------");
     ans.print();
     return ans;
